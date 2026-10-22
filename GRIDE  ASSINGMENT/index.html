@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium watches at Timegraph. Timeless design, refined style and luxury for every moment.">
+    <title>Timegraph | Timeless Luxury</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="announcement">
+        TIMELESS STYLE. EXCEPTIONAL CRAFTSMANSHIP.
+    </div>
+
+    <header class="header">
+        <a href="#" class="logo">TIME<span>GRAPH</span><small>TIME, REDEFINED.</small></a>
+
+        <nav class="nav" id="nav">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#story">Our Story</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="cart-button" id="cart-toggle" aria-label="Open shopping cart">
+                Bag <span id="cart-count">0</span>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">THE ART OF TIMEKEEPING</p>
+                <h1>Make Every<br>Second <em>Count.</em></h1>
+                <p class="hero-description">
+                    Discover timepieces designed for those who appreciate
+                    elegance, precision and timeless style.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#collection" class="btn btn-gold">Explore Collection ↗</a>
+                    <a href="#story" class="text-link">Discover Timegraph</a>
+                </div>
+                <div class="hero-note">
+                    <span class="gold-dot"></span>
+                    ELEGANCE THAT NEVER GOES OUT OF TIME
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-image"></div>
+                <div class="image-label">
+                    <span>TIMEGRAPH EDITION</span>
+                    <strong>Timeless by Design.</strong>
+                </div>
+                <div class="vertical-text">EST. FOR YOUR EVERY MOMENT</div>
+            </div>
+        </section>
+
+        <section class="trust-strip">
+            <div><span>✧</span> TIMELESS DESIGN</div>
+            <div><span>✧</span> CAREFULLY CURATED</div>
+            <div><span>✧</span> STYLE THAT LASTS</div>
+        </section>
+
+        <section class="collection section" id="collection">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR SIGNATURE</p>
+                    <h2>The Watch <em>Collection</em></h2>
+                </div>
+                <p class="section-subtitle">
+                    Refined pieces for every style, every occasion.
+                </p>
+            </div>
+
+            <div class="filters" id="filters">
+                <button class="filter active" data-filter="all">All Watches</button>
+                <button class="filter" data-filter="classic">Classic</button>
+                <button class="filter" data-filter="modern">Modern</button>
+                <button class="filter" data-filter="sport">Sport</button>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <span class="product-tag">BESTSELLER</span>
+                        <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=900&q=85" alt="Classic wristwatch" loading="lazy">
+                        <button class="quick-add" data-name="The Classic" data-price="8500">Add to Bag +</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>The Classic</h3><p>Refined. Timeless. Essential.</p></div>
+                        <strong>Rs. 8,500</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="modern">
+                    <div class="product-image">
+                        <span class="product-tag">NEW ARRIVAL</span>
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85" alt="Modern minimalist wristwatch" loading="lazy">
+                        <button class="quick-add" data-name="The Minimalist" data-price="10500">Add to Bag +</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>The Minimalist</h3><p>Less, but better.</p></div>
+                        <strong>Rs. 10,500</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sport">
+                    <div class="product-image">
+                        <span class="product-tag">EVERYDAY ICON</span>
+                        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=85" alt="Sport-inspired wristwatch" loading="lazy">
+                        <button class="quick-add" data-name="The Explorer" data-price="12000">Add to Bag +</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>The Explorer</h3><p>Built for your journey.</p></div>
+                        <strong>Rs. 12,000</strong>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="classic">
+                    <div class="product-image">
+                        <span class="product-tag">SIGNATURE</span>
+                        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=900&q=85" alt="Elegant signature wristwatch" loading="lazy">
+                        <button class="quick-add" data-name="The Signature" data-price="15000">Add to Bag +</button>
+                    </div>
+                    <div class="product-info">
+                        <div><h3>The Signature</h3><p>Quiet luxury, bold character.</p></div>
+                        <strong>Rs. 15,000</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="story" id="story">
+            <div class="story-image"></div>
+            <div class="story-content">
+                <p class="eyebrow">THE TIMEGRAPH PHILOSOPHY</p>
+                <h2>More Than a Watch.<br><em>A Personal Statement.</em></h2>
+                <p>
+                    Your time is valuable. Your style should reflect it.
+                    Timegraph brings together considered design and
+                    everyday sophistication to help you make every
+                    moment your own.
+                </p>
+                <a href="#collection" class="btn btn-outline">Find Your Watch ↗</a>
+            </div>
+        </section>
+
+        <section class="newsletter section" id="contact">
+            <p class="eyebrow">STAY IN THE MOMENT</p>
+            <h2>A Better Sense <em>of Time.</em></h2>
+            <p>Questions about a watch? Get in touch with our team.</p>
+            <a class="btn btn-gold" id="contact-button"
+               href="https://wa.me/923001234567" target="_blank" rel="noopener">
+                Chat on WhatsApp ↗
+            </a>
+            <p class="small-note">Replace the sample WhatsApp number in the code with your business number.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">TIME<span>GRAPH</span><small>TIME, REDEFINED.</small></a>
+        <p>Designed for every moment that matters.</p>
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> Timegraph. All rights reserved.</span>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Your Bag</h2>
+            <button id="cart-close" aria-label="Close shopping cart">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your bag is waiting for something timeless.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Total</span><strong id="cart-total">Rs. 0</strong></div>
+            <button class="btn btn-gold checkout-button" id="checkout">Order via WhatsApp ↗</button>
+            <p class="small-note">Your order is not confirmed until you contact the store.</p>
+        </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+</body>
+</html>
